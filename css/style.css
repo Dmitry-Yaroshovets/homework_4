@@ -34,7 +34,7 @@ img {
 }
 
 body {
-  background: var(--primary-white-color);
+  background: var(--white-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
   color: var(--primary-text-color);
@@ -211,7 +211,7 @@ header {
 
 /*advantage start*/
 .advantage {
-  background-color: var(--primary-white-color);
+  background-color: var(--white-color);
 }
 .advantage {
   padding: 94px 0 94px 0;
@@ -224,16 +224,19 @@ header {
   margin-right: 30px;
 }
 .advantage-item::before {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
   content: "";
   height: 120px;
-  background-color: var(--secondary-white-color);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background: url(../images/icon/antenna.svg) no-repeat, black;
 }
 .icon-attention::before {
-  background-image: url(../images/icon.svg/antenna\ 1.png);
+  background-image: url(../images/icon.svg/sprite.svg#icon-antenna);
 }
 .icon-punctuality::before {
   background-image: url(../images/icon.svg/clock\ 1.svg);
@@ -269,7 +272,6 @@ header {
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 50px;
-  margin-top: 94px;
 }
 .work-list {
   display: flex;
@@ -331,7 +333,20 @@ header {
 .card-team {
   padding: 30px 0 30px 0;
 }
-
+.icon {
+  fill: chartreuse;
+  stroke: coral;
+  width: 20px;
+  height: 20px;
+}
+.icon:hover {
+  fill: white;
+  stroke: yellow;
+}
+.icon-list {
+  display: flex;
+  justify-content: space-between;
+}
 /*team end*/
 /*index html end*/
 
@@ -408,8 +423,10 @@ header {
   color: var(--primary-text-color);
 }
 .card-content {
-  padding: 20px 24px;
+  padding: 20px;
   background-color: var(--white-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /*main end*/
 /*portfolio end*/
