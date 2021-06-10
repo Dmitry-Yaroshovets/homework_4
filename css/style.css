@@ -224,28 +224,30 @@ header {
   margin-right: 30px;
 }
 .advantage-item::before {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
   content: "";
+  display: block;
+
+  width: 270px;
   height: 120px;
-  background-size: contain;
+  margin-bottom: 30px;
+
   background-repeat: no-repeat;
-  background-position: center;
-  background: url(../images/icon/antenna.svg) no-repeat, black;
 }
 .icon-attention::before {
-  background-image: url(../images/icon.svg/sprite.svg#icon-antenna);
+  background: url(../images/icon/antenna.svg) no-repeat, rgba(0, 0, 0, 0.459);
+  background-position: center;
 }
 .icon-punctuality::before {
-  background-image: url(../images/icon.svg/clock\ 1.svg);
+  background: url(../images/icon/clock.svg) no-repeat, rgba(0, 0, 0, 0.459);
+  background-position: center;
 }
 .icon-plan::before {
-  background-image: url(../images/icon.svg/diagram\ 1.svg);
+  background: url(../images/icon/diagram.svg) no-repeat, rgba(0, 0, 0, 0.459);
+  background-position: center;
 }
 .icon-technology::before {
-  background-image: url(../images/icon.svg/astronaut\ 1.svg);
+  background: url(../images/icon/astronaut.svg) no-repeat, rgba(0, 0, 0, 0.459);
+  background-position: center;
 }
 .advantage-head {
   font-weight: 700;
@@ -334,18 +336,38 @@ header {
   padding: 30px 0 30px 0;
 }
 .icon {
-  fill: chartreuse;
-  stroke: coral;
+  fill: currentColor;
+  stroke: currentColor;
   width: 20px;
   height: 20px;
 }
-.icon:hover {
+/* .icon:hover {
   fill: white;
   stroke: yellow;
+} */
+.icon-list a:hover,
+.icon-list a:focus {
+  background-color: var(--accent-color);
 }
 .icon-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 16px;
+}
+.icon-list li:not(:last-child) {
+  margin-right: 10px;
+}
+.icon-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  color: var(--white-color);
+  background-color: #757575;
+  border-radius: 50%;
 }
 /*team end*/
 /*index html end*/
