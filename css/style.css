@@ -34,11 +34,13 @@ img {
 }
 
 body {
-  background: var(--white-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
-  color: var(--primary-text-color);
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background: var(--white-color);
 }
 .container {
   max-width: 1200px;
@@ -268,6 +270,9 @@ header {
 
 /*work start*/
 
+.work {
+  padding-bottom: 94px;
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -497,8 +502,7 @@ header {
 .card-content {
   padding: 20px;
   background-color: var(--white-color);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  border: 1px solid #eeeeee;
 }
 /*main end*/
 /*portfolio end*/
